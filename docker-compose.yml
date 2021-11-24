@@ -1,0 +1,10 @@
+version: '3'
+services:
+    php:
+        image: php:7.4-apache
+        volumes:
+            - ./htdocs:/var/www/html
+        ports:
+            - 8080:80
+        container_name: webdev
+        restart: always
